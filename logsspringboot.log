@@ -4980,3 +4980,101 @@ Caused by: java.lang.IllegalArgumentException: URL must start with 'jdbc'
 2022-02-25 03:29:00.721  INFO 3100 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-02-25 03:29:00.724  INFO 3100 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-02-25 03:29:00.750  INFO 3100 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-29 23:09:18.166  INFO 12712 --- [main] tn.esprit.spring.EmployeServiceImplTest  : Starting EmployeServiceImplTest on DESKTOP-JJSK4RT with PID 12712 (started by Omar MARZOUGUI in C:\Users\Omar MARZOUGUI\Documents\DevOps\mustapha)
+2022-06-29 23:09:18.179  INFO 12712 --- [main] tn.esprit.spring.EmployeServiceImplTest  : No active profile set, falling back to default profiles: default
+2022-06-29 23:09:21.356  INFO 12712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-29 23:09:21.670  INFO 12712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 276ms. Found 6 repository interfaces.
+2022-06-29 23:09:23.321  INFO 12712 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$127a43ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-29 23:09:24.228  INFO 12712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-29 23:09:24.870  INFO 12712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-29 23:09:25.094  INFO 12712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-06-29 23:09:25.345  INFO 12712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2022-06-29 23:09:25.353  INFO 12712 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-06-29 23:09:25.952  INFO 12712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-06-29 23:09:26.949  INFO 12712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-06-29 23:09:29.679  INFO 12712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-29 23:09:30.459  INFO 12712 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-06-29 23:09:32.168  INFO 12712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-29 23:09:32.288  WARN 12712 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-29 23:09:32.954  INFO 12712 --- [main] tn.esprit.spring.EmployeServiceImplTest  : Started EmployeServiceImplTest in 16.551 seconds (JVM running for 19.942)
+2022-06-29 23:09:33.284  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding contrat ...
+2022-06-29 23:09:33.456  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Contrat 20 added successfully!
+2022-06-29 23:09:33.461  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Updating emplyee 1 by email : Test@test.com
+2022-06-29 23:09:33.530  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Fourat updated successfully!
+2022-06-29 23:09:33.535  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Desaffecting employe from departement ...
+2022-06-29 23:09:33.543  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:33.552  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Fourat added successfully!
+2022-06-29 23:09:33.554  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Affecting employe to departement ...
+2022-06-29 23:09:33.565  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Affecting contrat with id : 1 to the employe with id : 1
+2022-06-29 23:09:33.588  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Contrat is affected to employee
+2022-06-29 23:09:33.595  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.EntrepriseServiceImplTest], using SpringBootContextLoader
+2022-06-29 23:09:33.596  INFO 12712 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [tn.esprit.spring.EntrepriseServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-29 23:09:33.596  INFO 12712 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tn.esprit.spring.EntrepriseServiceImplTest]: EntrepriseServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-29 23:09:33.599  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application for test class tn.esprit.spring.EntrepriseServiceImplTest
+2022-06-29 23:09:33.601  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2022-06-29 23:09:33.602  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7d0e43d6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@df04d12, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@757f47f0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7ff7e353, org.springframework.test.context.support.DirtiesContextTestExecutionListener@70680f88, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f7f544a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70b0dc92, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@309d54ac, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@390978, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@561c031, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7343d843, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@29a1dab3]
+2022-06-29 23:09:33.617  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterDepartement
+2022-06-29 23:09:33.617  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterDepartement
+2022-06-29 23:09:33.646  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 29 milliseconds.
+2022-06-29 23:09:33.693  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterEntreprise
+2022-06-29 23:09:33.693  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterEntreprise
+2022-06-29 23:09:33.706  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 13 milliseconds.
+2022-06-29 23:09:33.708  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterDepartement
+2022-06-29 23:09:33.708  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterDepartement
+2022-06-29 23:09:33.714  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 6 milliseconds.
+2022-06-29 23:09:33.714  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed getAllDepartementsNamesByEntreprise
+2022-06-29 23:09:33.714  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called getAllDepartementsNamesByEntreprise
+2022-06-29 23:09:33.725  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 11 milliseconds.
+2022-06-29 23:09:33.745  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterEntreprise
+2022-06-29 23:09:33.747  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterEntreprise
+2022-06-29 23:09:33.751  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 6 milliseconds.
+2022-06-29 23:09:33.753  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed deleteEntrepriseById
+2022-06-29 23:09:33.754  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called deleteEntrepriseById
+2022-06-29 23:09:33.757  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 4 milliseconds.
+2022-06-29 23:09:33.768  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterEntreprise
+2022-06-29 23:09:33.769  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterEntreprise
+2022-06-29 23:09:33.778  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 10 milliseconds.
+2022-06-29 23:09:33.793  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterEntreprise
+2022-06-29 23:09:33.793  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterEntreprise
+2022-06-29 23:09:33.801  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 8 milliseconds.
+2022-06-29 23:09:33.802  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterDepartement
+2022-06-29 23:09:33.802  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterDepartement
+2022-06-29 23:09:33.810  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 8 milliseconds.
+2022-06-29 23:09:33.811  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed affecterDepartementAEntreprise
+2022-06-29 23:09:33.812  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called affecterDepartementAEntreprise
+2022-06-29 23:09:33.847  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 36 milliseconds.
+2022-06-29 23:09:33.889  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterDepartement
+2022-06-29 23:09:33.893  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterDepartement
+2022-06-29 23:09:33.898  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 9 milliseconds.
+2022-06-29 23:09:33.900  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed deleteDepartementById
+2022-06-29 23:09:33.900  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called deleteDepartementById
+2022-06-29 23:09:33.906  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 6 milliseconds.
+2022-06-29 23:09:33.924  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Completed ajouterEntreprise
+2022-06-29 23:09:33.924  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Called ajouterEntreprise
+2022-06-29 23:09:33.935  INFO 12712 --- [main] t.e.spring.aspects.EntrepriseAspect      : Method execution time: 11 milliseconds.
+2022-06-29 23:09:33.952  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [tn.esprit.spring.TimesheetServiceTest], using SpringBootContextLoader
+2022-06-29 23:09:33.955  INFO 12712 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [tn.esprit.spring.TimesheetServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-29 23:09:33.955  INFO 12712 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [tn.esprit.spring.TimesheetServiceTest]: TimesheetServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-29 23:09:33.955  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application for test class tn.esprit.spring.TimesheetServiceTest
+2022-06-29 23:09:33.955  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2022-06-29 23:09:33.961  INFO 12712 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36a8ebca, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@328e687e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@434a72f2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5c8e7687, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d093067, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6c056020, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7cc842b0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@53dd29e0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3733b1f4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@70f0c352, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4e93d23e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@743b7025]
+2022-06-29 23:09:33.995  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:34.003  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Amr added successfully!
+2022-06-29 23:09:34.099  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:34.105  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Amr added successfully!
+2022-06-29 23:09:34.126  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:34.135  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Amr added successfully!
+2022-06-29 23:09:34.220  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:34.226  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Amr added successfully!
+2022-06-29 23:09:34.254  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:34.262  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Amr added successfully!
+2022-06-29 23:09:34.328  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:34.333  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Amr added successfully!
+2022-06-29 23:09:34.350  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Adding employee ...
+2022-06-29 23:09:34.354  INFO 12712 --- [main] t.e.spring.services.EmployeServiceImpl   : Employee Amr added successfully!
+2022-06-29 23:09:34.419  INFO 12712 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-29 23:09:34.422  INFO 12712 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-29 23:09:34.427  INFO 12712 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-29 23:09:34.454  INFO 12712 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
