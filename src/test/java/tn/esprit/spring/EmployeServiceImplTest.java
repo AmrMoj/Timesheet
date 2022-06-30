@@ -23,9 +23,9 @@ public class EmployeServiceImplTest {
     @Test
     public void ajouterEmployeTest(){
         Employe employe = new Employe();
-        employe.setPrenom("Fourat");
-        employe.setNom("Nefoussi");
-        employe.setEmail("fourat.nefoussi@esprit.tn");
+        employe.setPrenom("Mustapha");
+        employe.setNom("TRABELSI");
+        employe.setEmail("mustapha.trabelsi1@esprit.tn");
         employe.setActif(true);
         employe.setRole(Role.INGENIEUR);
         Assert.assertNotNull((Integer)employeService.ajouterEmploye(employe));
