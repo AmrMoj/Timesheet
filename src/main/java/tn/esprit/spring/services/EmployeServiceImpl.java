@@ -132,12 +132,13 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	public String getEmployePrenomById(int employeId) {
 		Employe employeManagedEntity = employeRepository.findById(employeId).orElse(null);
+		if(employeManagedEntity==null){return null;}
 		return employeManagedEntity.getPrenom();
 	}
 	public void deleteEmployeById(int employeId)
 	{
 		Employe employe = employeRepository.findById(employeId).orElse(null);
-
+		if(employe==null){throw new NullPointerException("employe not found");}
 		//Desaffecter l'employe de tous les departements
 		//c'est le bout master qui permet de mettre a jour
 		//la table d'association
@@ -150,6 +151,7 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	public void deleteContratById(int contratId) {
 		Contrat contratManagedEntity = contratRepoistory.findById(contratId).orElse(null);
+		if(contratManagedEntity==null){throw new NullPointerException("contract not found");}
 		contratRepoistory.delete(contratManagedEntity);
 
 	}
