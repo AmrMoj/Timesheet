@@ -1,5 +1,4 @@
-FROM maven:3.6.3-jdk-11
-WORKDIR /TimeSheetDevops-app
-COPY . .
-RUN mvn clean install
-CMD mvn spring-boot:run
+FROM openjdk:11-jdk-alpine
+EXPOSE 8082
+ADD target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNAPSHOT.war Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNAPSHOT.war
+ENTRYPOINT ["java","-jar","/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNAPSHOT.war"]

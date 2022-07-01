@@ -131,14 +131,21 @@ public class EmployeServiceImpl implements IEmployeService {
 	}
 
 	public String getEmployePrenomById(int employeId) {
+		log.info("Start method getEmployePrenomById");
+		log.debug("Finding employee");
 		Employe employeManagedEntity = employeRepository.findById(employeId).orElse(null);
-		if(employeManagedEntity==null){return null;}
+		if(employeManagedEntity==null){
+			log.error("Employee not found");
+			return null;}
 		return employeManagedEntity.getPrenom();
 	}
 	public void deleteEmployeById(int employeId)
 	{
+		log.info("Start method deleteEmployeById");
+		log.debug("Finding employee");
 		Employe employe = employeRepository.findById(employeId).orElse(null);
-		if(employe==null){throw new NullPointerException("employe not found");}
+		if(employe==null){log.error("Employee not found");
+			throw new NullPointerException("employe not found");}
 		//Desaffecter l'employe de tous les departements
 		//c'est le bout master qui permet de mettre a jour
 		//la table d'association
@@ -150,8 +157,11 @@ public class EmployeServiceImpl implements IEmployeService {
 	}
 
 	public void deleteContratById(int contratId) {
+		log.info("Start method deleteContratById");
+		log.debug("Finding contract");
 		Contrat contratManagedEntity = contratRepoistory.findById(contratId).orElse(null);
-		if(contratManagedEntity==null){throw new NullPointerException("contract not found");}
+		if(contratManagedEntity==null){log.error("Contract not found");
+			throw new NullPointerException("contract not found");}
 		contratRepoistory.delete(contratManagedEntity);
 
 	}
